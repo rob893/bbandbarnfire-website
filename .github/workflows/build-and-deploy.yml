@@ -32,14 +32,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Get build version
-        uses: tyankatsu0105/read-package-version-actions@v1
-        id: package-version
-
       - name: Upload build
         uses: actions/upload-artifact@v4
         with:
-          name: bbandbarnfire-website-b${{ github.run_number }}-v${{ steps.package-version.outputs.version }}
+          name: bbandbarnfire-website-b${{ github.run_number }}
           path: ./dist
 
   deploy-github-pages:
@@ -56,10 +52,10 @@ jobs:
         uses: actions/download-artifact@v4
 
       - name: Copy to build directory
-        run: cp -r bbandbarnfire-website-b${{ github.run_number }}-v* dist
+        run: cp -r bbandbarnfire-website-b${{ github.run_number }} dist
 
       - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@4.6.3
         with:
           branch: gh-pages
           folder: dist
