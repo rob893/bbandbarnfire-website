@@ -55,7 +55,7 @@ jobs:
         run: cp -r bbandbarnfire-website-b${{ github.run_number }} dist
 
       - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@4.6.3
+        uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
           branch: gh-pages
           folder: dist
