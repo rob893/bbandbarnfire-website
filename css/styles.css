@@ -42,8 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 244, 98, 58;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 235, 114, 233;
+  --bs-secondary-rgb: 40, 152, 134;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -63,7 +63,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #dee2e6;
   --bs-body-bg: #100806;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -75,8 +75,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f4623a;
-  --bs-link-hover-color: #c34e2e;
+  --bs-link-color: #289886;
+  --bs-link-hover-color: #218070;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -11144,7 +11144,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #289886;
   opacity: 1;
 }
 
@@ -11154,7 +11154,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: #100806;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11197,15 +11197,15 @@ hr.divider-light {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #eb72e9;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #eb72e9 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    background-color: #100806;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -11223,9 +11223,9 @@ hr.divider-light {
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
-  #mainNav.navbar-shrink {
+  /* #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: #100806;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
@@ -11238,14 +11238,12 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
-  }
+  } */
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%),
-    url('../assets/img/logoBig_n.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11357,7 +11355,7 @@ header.masthead .h1 {
   opacity: 1;
 }
 
-#about {
+#home {
   position: relative;
   overflow: hidden;
 }
@@ -11375,17 +11373,17 @@ header.masthead .h1 {
   background-size: cover;
 }
 
-#about .container {
+#home .container {
   position: relative;
   z-index: 1;
   text-align: center;
   color: white;
 }
 
-#about .text-white,
-#about .text-white-75,
-#about .divider-light,
-#about .btn-light {
+#home .text-white,
+#home .text-white-75,
+#home .divider-light,
+#home .btn-light {
   position: relative;
   z-index: 2;
 }
@@ -11398,19 +11396,65 @@ header.masthead .h1 {
 }
 
 .brand-title .main-title {
-  font-size: 1.5em; /* Adjust the size as needed */
+  font-size: 1.25em; /* Adjust the size as needed */
   color: #eb72e9;
   width: 100%;
 }
 
 .brand-title .subtitle {
-  font-size: 0.75em; /* Adjust the size as needed */
+  font-size: 0.92em; /* Adjust the size as needed */
   color: #289886;
   width: 100%;
 }
 
+/* .text-secondary {
+  color: #289886;
+} */
+
 .vertical-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Adjust spacing between buttons */
+  gap: 20px; /* Adjust spacing between buttons */
+}
+
+.horizontal-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adjust spacing between buttons */
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.image-text-section {
+  padding: 50px 0;
+}
+
+.image-text-section img {
+  width: 100%;
+  height: auto;
+}
+
+.image-text-section .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.image-grid-text-section {
+  padding: 50px 0;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
