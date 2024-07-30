@@ -11451,6 +11451,7 @@ header.masthead .h1 {
   width: 100%;
   height: auto;
   padding: 5px;
+  border-radius: 12px;
 }
 
 .text-content {
