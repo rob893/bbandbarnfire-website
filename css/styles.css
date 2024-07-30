@@ -11243,6 +11243,7 @@ hr.divider-light {
 
 header.masthead {
   padding-top: 10rem;
+  height: 100vh;
   padding-bottom: calc(10rem - 4.5rem);
   background-position: center;
   background-repeat: no-repeat;
@@ -11256,7 +11257,6 @@ header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
@@ -11371,6 +11371,7 @@ header.masthead .h1 {
   z-index: -1;
   transform: translate(-50%, -50%);
   background-size: cover;
+  filter: brightness(35%) contrast(100%);
 }
 
 #home .container {
@@ -11406,10 +11407,6 @@ header.masthead .h1 {
   color: #289886;
   width: 100%;
 }
-
-/* .text-secondary {
-  color: #289886;
-} */
 
 .vertical-buttons {
   display: flex;
