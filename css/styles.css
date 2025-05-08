@@ -68,7 +68,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #dee2e6;
-  --bs-body-bg: #100806;
+  --bs-body-bg: #060606;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -11171,7 +11171,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #100806;
+  background-color: #060606;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11223,7 +11223,7 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: #100806;
+    background-color: #060606;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
